@@ -1,0 +1,39 @@
+<!-- @codingwithap -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Strength Checker</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 2rem;
+    }
+    input {
+      padding: 0.5rem;
+      width: 300px;
+    }
+    #strength {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <input type="password" id="password" placeholder="Enter password" oninput="checkStrength()">
+  <div id="strength"></div>
+
+  <script>
+    function checkStrength() {
+      const val = document.getElementById('password').value;
+      let strength = 'Weak';
+      if (val.length > 8 && /[A-Z]/.test(val) && /[0-9]/.test(val)) {
+        strength = 'Strong';
+      } else if (val.length > 5) {
+        strength = 'Medium';
+      }
+      document.getElementById('strength').innerText = `Strength: ${strength}`;
+    }
+  </script>
+</body>
+</html>
