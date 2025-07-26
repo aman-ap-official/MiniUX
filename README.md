@@ -7,11 +7,11 @@ Perfect for learning, prototyping, and enhancing your frontend development skill
 
 ## 📅 Daily Projects
 
-| Day | Project Title         | Description                                 | Code                                              | Output                                                                 |
-|-----|------------------------|---------------------------------------------|---------------------------------------------------|------------------------------------------------------------------------|
-| 1   | Typing Text Animation | Typewriter-style animated heading text      | [`View Code`](./day-1-typing-text-animation)      | [Watch Output](https://www.instagram.com/reel/DMTDn8jyw7E/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
-| 2   | Coming Soon           | To be announced                             | Coming Soon                                       | Coming Soon                                                            |
-| 3   | Coming Soon           | To be announced                             | Coming Soon                                       | Coming Soon                                                            |
+| Day | Project Title         | Description                                 | Code                                                                                   | Output                                                                 |
+|-----|------------------------|---------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| 1   | Typing Text Animation | Typewriter-style animated heading text      | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%201/Day%201.html) | [Watch Output](https://www.instagram.com/reel/DMTDn8jyw7E/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
+| 2   | Coming Soon           | To be announced                             | Coming Soon                                                                            | Coming Soon                                                            |
+| 3   | Coming Soon           | To be announced                             | Coming Soon                                                                            | Coming Soon                                                            |
 
 > ✨ New projects are added daily — follow and stay updated!
 
