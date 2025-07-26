@@ -1,0 +1,37 @@
+<!-- @codingwithap -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dark Mode</title>
+  <style>
+    :root {
+      --bg: white;
+      --text: black;
+    }
+    .dark {
+      --bg: #111;
+      --text: #eee;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      transition: 0.3s;
+      padding: 2rem;
+      font-family: Arial;
+    }
+    button {
+      padding: 0.5rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="toggleMode()">Toggle Dark Mode</button>
+  <h1>Dark Mode Toggle</h1>
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
