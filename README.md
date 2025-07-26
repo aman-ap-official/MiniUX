@@ -7,11 +7,11 @@ Perfect for learning, prototyping, and enhancing your frontend development skill
 
 ## 📅 Daily Projects
 
-| Day | Project Title                  | Description                                                      | Code                                                                                   | Output                                                                 |
-|-----|--------------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| 1   | Typing Text Animation          | Typewriter-style animated heading text                          | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%201/Day%201.html) | [Watch Output](https://www.instagram.com/reel/DMTDn8jyw7E/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
-| 2   | One Click = Night Mode ☀️→🌙    | Transform your entire site into dark mode in 5 seconds.         | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%202/Day%202.html) | [Watch Output](https://www.instagram.com/reel/DMVROq6y4Zl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
-| 3   | Coming Soon                    | To be announced                                                  | Coming Soon                                                                            | Coming Soon                                                            |
+| Day | Project Title                     | Description                                                      | Code                                                                                   | Output                                                                 |
+|-----|-----------------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| 1   | Typing Text Animation             | Typewriter-style animated heading text                          | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%201/Day%201.html) | [Watch Output](https://www.instagram.com/reel/DMTDn8jyw7E/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
+| 2   | One Click = Night Mode ☀️→🌙       | Transform your entire site into dark mode in 5 seconds.         | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%202/Day%202.html) | [Watch Output](https://www.instagram.com/reel/DMVROq6y4Zl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
+| 3   | How Strong Is Your Password? 🔐   | Test your password strength in real-time with this simple UI.   | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%203/Day%203.html) | [Watch Output](https://www.instagram.com/reel/DMX3m9ryNN6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
 
 > ✨ New projects are added daily — follow and stay updated!
 
