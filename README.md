@@ -7,11 +7,11 @@ Perfect for learning, prototyping, and enhancing your frontend development skill
 
 ## 📅 Daily Projects
 
-| Day | Project Title         | Description                                 | Live Demo   |
-|-----|------------------------|---------------------------------------------|-------------|
-| 1   | Typing Text Animation | Typewriter-style animated heading text      | Coming Soon |
-| 2   | Coming Soon           | To be announced                             | Coming Soon |
-| 3   | Coming Soon           | To be announced                             | Coming Soon |
+| Day | Project Title         | Description                                 | Code            | Output       |
+|-----|------------------------|---------------------------------------------|------------------|--------------|
+| 1   | Typing Text Animation | Typewriter-style animated heading text      | [`View Code`](./day-1-typing-text-animation) | Coming Soon   |
+| 2   | Coming Soon           | To be announced                             | Coming Soon     | Coming Soon  |
+| 3   | Coming Soon           | To be announced                             | Coming Soon     | Coming Soon  |
 
 > ✨ New projects are added daily — follow and stay updated!
 
