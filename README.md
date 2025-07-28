@@ -28,6 +28,7 @@ Perfect for learning, prototyping, and enhancing your frontend development skill
 | 2   | One Click = Night Mode ☀️→🌙        | Toggle your site between light and dark mode                     | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%202/Day%202.html) | [Watch Output](https://www.instagram.com/reel/DMVROq6y4Zl/)            |
 | 3   | How Strong Is Your Password? 🔐    | Real-time password strength checker with dynamic UI feedback     | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%203/Day%203.html) | [Watch Output](https://www.instagram.com/reel/DMX3m9ryNN6/)            |
 | 4   | Live Character Counter 💬          | Track your character count as you type — perfect for bios/tweets | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%204/Day%204.html) | [Watch Output](https://www.instagram.com/reel/DMaSmRPy7sq/)            |
+| 5   | Click = New Color Combo 🎨         | Generate beautiful random background colors with every click     | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%205/Day%205.html) | [Watch Output](https://www.instagram.com/reel/DMc74xZSam7/)            |
 
 > ✨ New projects are added daily — follow and stay updated!
 
