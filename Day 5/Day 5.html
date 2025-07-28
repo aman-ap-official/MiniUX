@@ -1,0 +1,31 @@
+<!-- @codingwithap -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Generator</title>
+  <style>
+    body {
+      text-align: center;
+      padding: 5rem;
+      font-family: sans-serif;
+      transition: background 0.5s;
+    }
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Random Color Generator</h1>
+  <button onclick="changeColor()">Change Background</button>
+
+  <script>
+    function changeColor() {
+      const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+      document.body.style.background = color;
+    }
+  </script>
+</body>
+</html>
