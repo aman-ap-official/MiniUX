@@ -40,8 +40,6 @@ Perfect for learning, prototyping, and enhancing your frontend development skill
 ---
 
 
----
-
 ## 🧰 Tech Stack
 
 - **HTML5** – Semantic markup for structured content  
