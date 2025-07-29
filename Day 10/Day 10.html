@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Notes App</title>
+
+  <!-- @codingwithap -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .notes-list {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .note {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      position: relative;
+      transition: 0.3s ease;
+    }
+
+    .note:hover {
+      transform: translateY(-4px);
+    }
+
+    .note h4 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .note p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .note button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ff5c5c;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      padding: 4px 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+
+    .add-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .add-btn:hover {
+      background: #3a7fd8;
+    }
+
+    .modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      display: none;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .modal-content input,
+    .modal-content textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .modal-content button {
+      padding: 0.8rem;
+      width: 100%;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .close-btn {
+      background: #ccc;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+
+<!-- @codingwithap -->
+<body>
+
+  <header>📝 My Notes</header>
+
+  <div class="container">
+    <div class="notes-list" id="notesList"></div>
+  </div>
+
+  <!-- Floating Add Note Button -->
+  <button class="add-btn" onclick="openModal()">+</button>
+
+  <!-- Modal for new note -->
+  <div class="modal" id="noteModal">
+    <div class="modal-content">
+      <input type="text" id="title" placeholder="Note title" />
+      <textarea id="content" placeholder="Write your note..." rows="4"></textarea>
+      <button onclick="addNote()">Save Note</button>
+      <button class="close-btn" onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+
+  <!-- @codingwithap -->
+  <script>
+    function loadNotes() {
+      const notes = JSON.parse(localStorage.getItem("notesApp")) || [];
+      const notesList = document.getElementById("notesList");
+      notesList.innerHTML = "";
+
+      notes.forEach((note, index) => {
+        const noteDiv = document.createElement("div");
+        noteDiv.className = "note";
+        noteDiv.innerHTML = `
+          <h4>${note.title}</h4>
+          <p>${note.content}</p>
+          <button onclick="deleteNote(${index})">×</button>
+        `;
+        notesList.appendChild(noteDiv);
+      });
+    }
+
+    function addNote() {
+      const title = document.getElementById("title").value.trim();
+      const content = document.getElementById("content").value.trim();
+
+      if (!title || !content) {
+        alert("Please fill out both fields.");
+        return;
+      }
+
+      const notes = JSON.parse(localStorage.getItem("notesApp")) || [];
+      notes.push({ title, content });
+      localStorage.setItem("notesApp", JSON.stringify(notes));
+
+      document.getElementById("title").value = "";
+      document.getElementById("content").value = "";
+      closeModal();
+      loadNotes();
+    }
+
+    function deleteNote(index) {
+      const notes = JSON.parse(localStorage.getItem("notesApp")) || [];
+      notes.splice(index, 1);
+      localStorage.setItem("notesApp", JSON.stringify(notes));
+      loadNotes();
+    }
+
+    function openModal() {
+      document.getElementById("noteModal").classList.add("active");
+    }
+
+    function closeModal() {
+      document.getElementById("noteModal").classList.remove("active");
+    }
+
+    window.onload = loadNotes;
+  </script>
+
+</body>
+</html>
