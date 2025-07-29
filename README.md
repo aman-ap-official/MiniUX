@@ -33,8 +33,30 @@ Perfect for learning, prototyping, and enhancing your frontend development skill
 | 7   | Digital Clock with Date 🕒         | Live digital clock for dashboards or portfolios                  | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%207/Day%207.html) | [Watch Output](https://www.instagram.com/reel/DMk28U8ydKz/)            |
 | 8   | Expense Tracker 💸                 | Add, remove income/expenses with localStorage support            | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%208/Day%208.html) | [Watch Output](https://www.instagram.com/reel/DMnO7nVy3Gt/)            |
 | 9   | QR Code Generator 📷               | Generate QR codes from any link or text                          | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%209/Day%209.html) | [Watch Output](https://www.instagram.com/reel/DMpxmhmyaMv/)            |
+| 10  | Notes App with Save/Delete 📝      | Create, view, and delete notes saved in localStorage             | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2010/Day%2010.html) | [Watch Output](https://www.instagram.com/reel/DMsZFSoSSzT/)            |
 
 > ✨ New projects are added daily — follow and stay updated!
+
+---
+
+## 🔥 Day 10 Highlight — Notes App with Save/Delete
+
+**Hook**: _“Take notes. Save them forever (on your device)!”_
+
+**Why**: Note-taking tools are highly **relatable** and **practical**. Great way to practice DOM manipulation and localStorage.
+
+**Features**:
+- Add notes with **title + content**
+- View **all saved notes**
+- **Delete** individual notes
+- Data persists using `localStorage`
+
+**Instagram Caption Suggestion**:
+> 💡 Build a simple yet powerful notes app — using just HTML, CSS & JavaScript!  
+> 🔐 Data is saved locally, so it stays even after refresh.  
+> 📲 Try this in your browser right now!
+
+📌 Hashtags: `#NotesApp` `#ProductivityTools` `#JavaScriptProjects`
 
 ---
 
