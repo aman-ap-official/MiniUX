@@ -39,24 +39,6 @@ Perfect for learning, prototyping, and enhancing your frontend development skill
 
 ---
 
-## 🔥 Day 10 Highlight — Notes App with Save/Delete
-
-**Hook**: _“Take notes. Save them forever (on your device)!”_
-
-**Why**: Note-taking tools are highly **relatable** and **practical**. Great way to practice DOM manipulation and localStorage.
-
-**Features**:
-- Add notes with **title + content**
-- View **all saved notes**
-- **Delete** individual notes
-- Data persists using `localStorage`
-
-**Instagram Caption Suggestion**:
-> 💡 Build a simple yet powerful notes app — using just HTML, CSS & JavaScript!  
-> 🔐 Data is saved locally, so it stays even after refresh.  
-> 📲 Try this in your browser right now!
-
-📌 Hashtags: `#NotesApp` `#ProductivityTools` `#JavaScriptProjects`
 
 ---
 
