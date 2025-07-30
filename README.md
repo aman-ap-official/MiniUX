@@ -34,7 +34,7 @@ Perfect for learning, prototyping, and enhancing your frontend development skill
 | 8   | Expense Tracker 💸                    | Add, remove income/expenses with localStorage support            | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%208/Day%208.html) | [Watch Output](https://www.instagram.com/reel/DMnO7nVy3Gt/)            |
 | 9   | QR Code Generator 📷                  | Generate QR codes from any link or text                          | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%209/Day%209.html) | [Watch Output](https://www.instagram.com/reel/DMpxmhmyaMv/)            |
 | 10  | Notes App with Save/Delete 📝         | Create, view, and delete notes saved in localStorage             | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2010/Day%2010.html) | [Watch Output](https://www.instagram.com/reel/DMsZFSoSSzT/)            |
-| 17  | Text-to-Speech Tool 🗣️               | Type anything and hear it aloud — no backend needed              | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2011/Day%2011.html) | [Watch Output](https://www.instagram.com/reel/DMu-_FbSrcx/)            |
+| 11  | Text-to-Speech Tool 🗣️               | Type anything and hear it aloud — no backend needed              | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2011/Day%2011.html) | [Watch Output](https://www.instagram.com/reel/DMu-_FbSrcx/)            |
 
 > ✨ New projects are added daily — follow and stay updated!
 
