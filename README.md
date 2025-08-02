@@ -36,6 +36,7 @@ Perfect for learning, prototyping, and enhancing your frontend development skill
 | 10  | Notes App with Save/Delete 📝         | Create, view, and delete notes saved in localStorage             | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2010/Day%2010.html) | [Watch Output](https://www.instagram.com/reel/DMsZFSoSSzT/)            |
 | 11  | Text-to-Speech Tool 🗣️               | Type anything and hear it aloud — no backend needed              | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2011/Day%2011.html) | [Watch Output](https://www.instagram.com/reel/DMu-_FbSrcx/)            |
 | 12  | Currency Converter 💱                | Convert currencies live using ExchangeRate API                   | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2012/Day%2012.html) | [Watch Output](https://www.instagram.com/reel/DMxdh-DSMSn/)            |
+| 13  | Password Generator 🔐                 | Generate strong, customizable passwords instantly                | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2013/Day%2013.html) | [Watch Output](https://www.instagram.com/reel/DM2qEH6Snh6/)            |
 > ✨ New projects are added daily — follow and stay updated!
 
 ---
