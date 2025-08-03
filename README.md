@@ -37,6 +37,8 @@ Perfect for learning, prototyping, and enhancing your frontend development skill
 | 11  | Text-to-Speech Tool 🗣️               | Type anything and hear it aloud — no backend needed              | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2011/Day%2011.html) | [Watch Output](https://www.instagram.com/reel/DMu-_FbSrcx/)            |
 | 12  | Currency Converter 💱                | Convert currencies live using ExchangeRate API                   | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2012/Day%2012.html) | [Watch Output](https://www.instagram.com/reel/DMxdh-DSMSn/)            |
 | 13  | Password Generator 🔐                 | Generate strong, customizable passwords instantly                | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2013/Day%2013.html) | [Watch Output](https://www.instagram.com/reel/DM2qEH6Snh6/)            |
+| 14  | Speech-to-Text App 🎙️                | Talk to your browser & watch it type your words live — no backend needed | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2014/Day%2014.html) | [Watch Output](https://www.instagram.com/reel/DM5PaBwSqY8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
+
 > ✨ New projects are added daily — follow and stay updated!
 
 ---
