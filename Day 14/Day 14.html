@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Speech to Text</title>
+  <!-- @codingwithap -->
+  <style>
+    body {
+      background: #fdfdfd;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 2rem;
+      color: #333;
+    }
+
+    h1 {
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .output {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      padding: 1rem;
+      border: 2px dashed #ccc;
+      border-radius: 10px;
+      min-height: 100px;
+      background-color: #f0f8ff;
+    }
+  </style>
+</head>
+
+<!-- @codingwithap -->
+<body>
+
+  <h1>🎙️ Speech to Text</h1>
+  <button onclick="startListening()">🎤 Start Speaking</button>
+  <div class="output" id="output">Your speech will appear here...</div>
+
+  <!-- @codingwithap -->
+  <script>
+    const output = document.getElementById("output");
+
+    function startListening() {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      
+      if (!SpeechRecognition) {
+        output.innerText = "❌ Sorry, your browser doesn't support speech recognition.";
+        return;
+      }
+
+      const recognition = new SpeechRecognition();
+      recognition.lang = "en-US";
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.start();
+
+      output.innerText = "🎙️ Listening...";
+
+      recognition.onresult = function(event) {
+        const transcript = event.results[0][0].transcript;
+        output.innerText = `📝 You said: "${transcript}"`;
+      };
+
+      recognition.onerror = function(event) {
+        output.innerText = "❌ Error occurred: " + event.error;
+      };
+    }
+  </script>
+
+</body>
+</html>
