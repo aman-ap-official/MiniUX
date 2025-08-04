@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skeleton Loader | codingwithap</title>
+  <meta name="description" content="Learn to create an animated skeleton loader using HTML, CSS & JS. Follow @codingwithap for daily coding projects!">
+  
+  <!-- @codingwithap -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      padding: 2rem;
+      color: #333;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
+      position: relative;
+    }
+
+    .skeleton {
+      background: linear-gradient(90deg, #ececec 25%, #dddddd 50%, #ececec 75%);
+      background-size: 200% 100%;
+      animation: loading 1.2s infinite ease-in-out;
+      border-radius: 6px;
+    }
+
+    .skeleton-title {
+      height: 20px;
+      width: 60%;
+      margin-bottom: 1rem;
+    }
+
+    .skeleton-text {
+      height: 15px;
+      width: 100%;
+      margin-bottom: 0.8rem;
+    }
+
+    .skeleton-avatar {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    @keyframes loading {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+
+    .real-content {
+      display: none;
+      text-align: center;
+    }
+
+    .real-content img {
+      border-radius: 50%;
+      width: 50px;
+      margin-bottom: 0.8rem;
+    }
+
+    .real-content h3 {
+      margin: 0.2rem 0;
+    }
+
+    .branding {
+      margin-top: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .branding a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .branding a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<!-- @codingwithap -->
+<body>
+
+  <div class="card" id="card">
+    <div class="skeleton skeleton-avatar"></div>
+    <div class="skeleton skeleton-title"></div>
+    <div class="skeleton skeleton-text"></div>
+    <div class="skeleton skeleton-text" style="width: 80%"></div>
+
+    <div class="real-content" id="real">
+      <img src="https://i.pravatar.cc/50" alt="Avatar">
+      <h3>Jane Doe</h3>
+      <p>✨ Clean placeholder while your content loads. Built with 💙</p>
+    </div>
+  </div>
+
+  <div class="branding">
+    ⚡ Daily Dev Projects by <a href="https://www.instagram.com/codingwithap/" target="_blank">@codingwithap</a>
+  </div>
+
+  <!-- @codingwithap -->
+  <script>
+    setTimeout(() => {
+      document.querySelectorAll(".skeleton").forEach(el => el.style.display = "none");
+      document.getElementById("real").style.display = "block";
+    }, 2500);
+  </script>
+
+</body>
+</html>
