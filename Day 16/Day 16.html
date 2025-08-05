@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drag & Drop To-Do List | codingwithap</title>
+  <meta name="description" content="Build an interactive drag-and-drop to-do list with JavaScript. Follow @codingwithap for more daily coding mini projects!">
+  
+  <!-- @codingwithap -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      padding: 2rem;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #444;
+    }
+
+    .todo-container {
+      max-width: 400px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    input {
+      padding: 0.6rem;
+      width: 80%;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.6rem 1rem;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    li {
+      background: #e3f2fd;
+      margin-bottom: 0.5rem;
+      padding: 0.8rem;
+      border-radius: 6px;
+      cursor: grab;
+    }
+
+    .dragging {
+      opacity: 0.5;
+    }
+
+    .branding {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .branding a {
+      color: #007BFF;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .branding a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<!-- @codingwithap -->
+<body>
+
+  <h1>📝 Drag & Drop To-Do List</h1>
+  <div class="todo-container">
+    <input type="text" id="taskInput" placeholder="Add a new task" />
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <div class="branding">
+    🔥 Daily Code Drops by <a href="https://www.instagram.com/codingwithap" target="_blank">@codingwithap</a>
+  </div>
+
+  <!-- @codingwithap -->
+  <script>
+    const taskInput = document.getElementById("taskInput");
+    const taskList = document.getElementById("taskList");
+
+    function addTask() {
+      const taskText = taskInput.value.trim();
+      if (taskText === "") return;
+
+      const li = document.createElement("li");
+      li.textContent = taskText;
+      li.setAttribute("draggable", "true");
+
+      li.addEventListener("dragstart", () => {
+        li.classList.add("dragging");
+      });
+
+      li.addEventListener("dragend", () => {
+        li.classList.remove("dragging");
+      });
+
+      taskList.appendChild(li);
+      taskInput.value = "";
+    }
+
+    taskList.addEventListener("dragover", e => {
+      e.preventDefault();
+      const dragging = document.querySelector(".dragging");
+      const afterElement = getDragAfterElement(taskList, e.clientY);
+      if (afterElement == null) {
+        taskList.appendChild(dragging);
+      } else {
+        taskList.insertBefore(dragging, afterElement);
+      }
+    });
+
+    function getDragAfterElement(container, y) {
+      const draggableElements = [...container.querySelectorAll("li:not(.dragging)")];
+
+      return draggableElements.reduce((closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = y - box.top - box.height / 2;
+
+        if (offset < 0 && offset > closest.offset) {
+          return { offset: offset, element: child };
+        } else {
+          return closest;
+        }
+      }, { offset: Number.NEGATIVE_INFINITY }).element;
+    }
+  </script>
+
+</body>
+</html>
