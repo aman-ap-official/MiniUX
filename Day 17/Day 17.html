@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emoji Search App</title>
+
+  <!-- @codingwithap -->
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      text-align: center;
+      padding: 2rem;
+      color: #333;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    input {
+      padding: 0.8rem 1rem;
+      width: 80%;
+      max-width: 400px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .results {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 1rem;
+    }
+
+    .emoji {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      font-size: 1.8rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .emoji:hover {
+      transform: scale(1.1);
+    }
+
+    .label {
+      font-size: 0.8rem;
+      margin-top: 0.3rem;
+      color: #555;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<!-- @codingwithap -->
+<body>
+  <h1>🔍 Emoji Search</h1>
+  <input type="text" id="search" placeholder="Search emojis (e.g. heart, fire)" />
+  <div class="results" id="results"></div>
+
+  <footer>
+    Built with ❤️ by <a href="https://www.instagram.com/codingwithap" target="_blank">@codingwithap</a>
+  </footer>
+
+  <!-- @codingwithap -->
+  <script>
+    const emojiList = [
+      { emoji: "😀", name: "grinning face" },
+      { emoji: "😂", name: "face with tears of joy" },
+      { emoji: "😍", name: "smiling face with heart eyes" },
+      { emoji: "😎", name: "smiling face with sunglasses" },
+      { emoji: "😭", name: "loudly crying face" },
+      { emoji: "🔥", name: "fire" },
+      { emoji: "💯", name: "hundred points" },
+      { emoji: "🤔", name: "thinking face" },
+      { emoji: "🎉", name: "party popper" },
+      { emoji: "👍", name: "thumbs up" },
+      { emoji: "🚀", name: "rocket" },
+      { emoji: "🌟", name: "glowing star" },
+      { emoji: "🧠", name: "brain" },
+      { emoji: "💡", name: "light bulb" },
+      { emoji: "❤️", name: "red heart" },
+      { emoji: "😴", name: "sleeping face" },
+      { emoji: "🙌", name: "raising hands" },
+      { emoji: "🤯", name: "exploding head" },
+      { emoji: "👀", name: "eyes" },
+      { emoji: "⚡", name: "high voltage" }
+    ];
+
+    const input = document.getElementById("search");
+    const results = document.getElementById("results");
+
+    function displayEmojis(filter = "") {
+      const filtered = emojiList.filter(e =>
+        e.name.toLowerCase().includes(filter.toLowerCase())
+      );
+
+      results.innerHTML = filtered.map(e => `
+        <div class="emoji">
+          ${e.emoji}
+          <div class="label">${e.name}</div>
+        </div>
+      `).join("");
+
+      if (filtered.length === 0) {
+        results.innerHTML = "😢 No results found.";
+      }
+    }
+
+    input.addEventListener("input", () => displayEmojis(input.value));
+    displayEmojis(); // Show all on load
+  </script>
+</body>
+</html>
