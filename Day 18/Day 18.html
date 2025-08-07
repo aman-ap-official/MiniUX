@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Timer</title>
+
+  <!-- @codingwithap -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    #timer {
+      font-size: 4rem;
+      margin: 1.5rem 0;
+    }
+
+    button {
+      padding: 0.8rem 1.5rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background: #00c6ff;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #007bff;
+    }
+
+    #message {
+      margin-top: 1rem;
+      font-style: italic;
+      color: #ccc;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<!-- @codingwithap -->
+<body>
+  <h1>🕒 Pomodoro Timer</h1>
+  <div id="timer">25:00</div>
+  <button onclick="startTimer()">▶️ Start</button>
+  <button onclick="resetTimer()">🔁 Reset</button>
+  <div id="message"></div>
+
+  <footer>
+    Made with ⌛ by <a href="https://www.instagram.com/codingwithap" target="_blank" style="color:#fff;">@codingwithap</a>
+  </footer>
+
+  <!-- @codingwithap -->
+  <script>
+    let time = 25 * 60; // 25 minutes in seconds
+    let interval;
+    const timerEl = document.getElementById("timer");
+    const messageEl = document.getElementById("message");
+
+    function updateTimer() {
+      const minutes = Math.floor(time / 60);
+      const seconds = time % 60;
+      timerEl.textContent = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+    }
+
+    function startTimer() {
+      if (interval) return;
+      interval = setInterval(() => {
+        if (time > 0) {
+          time--;
+          updateTimer();
+        } else {
+          clearInterval(interval);
+          interval = null;
+          messageEl.textContent = "✅ Time's up! Take a break!";
+        }
+      }, 1000);
+    }
+
+    function resetTimer() {
+      clearInterval(interval);
+      interval = null;
+      time = 25 * 60;
+      updateTimer();
+      messageEl.textContent = "";
+    }
+
+    updateTimer(); // Initialize display
+  </script>
+</body>
+</html>
