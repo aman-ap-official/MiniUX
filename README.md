@@ -41,6 +41,8 @@ Perfect for learning, prototyping, and enhancing your frontend development skill
 | 15  | Animated Loading Skeleton 📅          | Before real content loads, show animated grey placeholders that mimic the layout — sleek and modern | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2015/Day%2015.html) | [Watch Output](https://www.instagram.com/reel/DM71k9zS6BQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
 | 16  | Drag & Drop To-Do List                | Interactive task list with drag-and-drop functionality           | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2016/Day%2016.html) | [Watch Output](https://www.instagram.com/reel/DM-ei-qSnaQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
 | 17  | Real-Time Emoji Search 😍🔥🚀          | Super visual, interactive emoji search — no internet needed!     | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2017/Day%2017.html) | [Watch Output](https://www.instagram.com/reel/DNA_kDvSYaj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
+| 18  | Pomodoro Timer (Focus App) ⏱️         | 25-min focus timer with start/reset, motivational message & dark UI | [View Code](https://github.com/aman-ap-official/MiniUX/blob/main/Day%2018/Day%2018.html) | [Watch Output](https://www.instagram.com/reel/DNDlbb3Svdb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==) |
+
 
 > ✨ New projects are added daily — follow and stay updated!
 
